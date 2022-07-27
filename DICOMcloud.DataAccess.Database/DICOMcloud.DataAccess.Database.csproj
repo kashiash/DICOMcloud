@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DICOMcloud.DataAccess.Database</RootNamespace>
     <AssemblyName>DICOMcloud.DataAccess.Database</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Resources\Version\AssemblyInfo.Version.cs">
-      <Link>Properties\AssemblyInfo.Version.cs</Link>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AssemblyInfo.Version.tt</DependentUpon>
-    </Compile>
     <Compile Include="Commands\DicomDsQueryCommand.cs" />
     <Compile Include="Commands\ExecuteNonQueryCommand.cs" />
     <Compile Include="Commands\IDataAdapterCommand.cs" />
@@ -88,7 +82,6 @@
     <Compile Include="SqlInsertStatments.cs" />
     <Compile Include="ObjectArchieveDataAccess.cs" />
     <Compile Include="ObjectArchieveSortingStrategy.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="DatabaseSchema.xml">
@@ -106,14 +99,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Resources\Version\AssemblyInfo.Version.tt">
-      <Link>Properties\AssemblyInfo.Version.tt</Link>
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>AssemblyInfo.Version1.cs</LastGenOutput>
-    </None>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
